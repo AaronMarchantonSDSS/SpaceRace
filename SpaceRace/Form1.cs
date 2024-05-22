@@ -160,7 +160,7 @@ namespace SpaceRace
             randValue = randGen.Next(0, 100);
 
             //spawn balls with various speeds (Left to Right)
-            if (randValue < 17)
+            if (randValue < 16)
             {
                     randValue = randGen.Next(10, 455 - meteorSize * 2);
 
@@ -170,7 +170,7 @@ namespace SpaceRace
             }
 
             //spawn balls with various speeds (Right to Left)
-            if (randValue > 20 && randValue < 34)
+            if (randValue > 20 && randValue < 32)
             {
                 randValue = randGen.Next(10, 455 - meteorSize * 2);
 
@@ -244,8 +244,8 @@ namespace SpaceRace
             meteorList.Clear();
             meteorSpeeds.Clear();
 
-            Rectangle player1 = new Rectangle(182, 480, 10, 25);
-            Rectangle player2 = new Rectangle(406, 480, 10, 25);
+            player1 = new Rectangle(182, 480, 10, 25);
+            player2 = new Rectangle(406, 480, 10, 25);
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
